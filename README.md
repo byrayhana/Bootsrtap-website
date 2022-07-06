@@ -1,6 +1,6 @@
 # Bootsrtap-website
 Bootstrap Website 
-# Required knowledge
+## Required knowledge
 > HTML <br>
 > CSS <br>
 > Bootstrap v5.2 <br>
