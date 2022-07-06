@@ -1,0 +1,221 @@
+:root{
+    --dark-color: #19283f;
+    --green: #33d1cc;
+    --yellow:#ffa311;
+    --btn-red:#ff3150;
+    --bg-gray:#eff7fa;
+}
+body{
+    font-family: "Roboto",sans-serif;
+}
+/* start Navbar */
+.navbar{
+    background-color: #19283f;
+}
+.navbar .navbar-nav .nav-item .nav-link{
+    color: white;
+    
+}
+.navbar .navbar-nav .nav-item .nav-link.active,
+.navbar .navbar-nav .nav-item .nav-link:focus,
+.navbar .navbar-nav .nav-item .nav-link:hover{
+ color: var(--green);
+}
+.navbar .search{
+    border-left:1px solid var(--green);
+    color: var(--green);
+}
+.navbar .navbar-toggler{
+    color: white;
+    border-color:white;
+    font-size: 25px;
+
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+ .navbar .navbar-toggler[aria-expanded="true"]{  /* tıklandığında*/
+     border-color: var(--green);
+}
+.navbar .btn ,
+.landing .btn
+{
+    background-color: var(--btn-red);
+    color: var(--yellow);
+    font-weight: bold;
+    border: none;
+    padding: 0.5rem ,1rem;
+}
+
+.landing .btn:focus,
+.landing .btn:hover,
+.navbar .btn:hover ,
+.navbar .btn:focus
+{
+ background-color:white;
+ border: 1rem #33d1cc;
+ color:#19283f;
+}
+
+/* End Navbar */
+ /* Start landing */
+ .landing{
+     background-color: var(--dark-color);
+     min-height: calc(100vh - 72px);  /* 100vh: sayfanın tamamı 72: navbarın yuksekliği */
+ }
+ /* end landing */
+ .main-title::after{
+     content: '';
+     width:120px;
+     height:2px;
+     background-color: var(--green);
+     position: absolute;
+     bottom:-20px;
+     left: 50%;
+     transform: translateX(-50%);
+
+ }
+ /*Features start*/
+ .features .row i{
+     font-size: 75px;
+     color:var(--green);
+    }
+ .features .row h2{
+      color: #ffc400;
+      font-weight:550;
+    }
+    /*Features end*/
+    /* start our work*/
+.our-work{
+    background-color: var(--bg-gray);
+}
+.our-work ul .active{
+    background-color: var(--btn-red);
+    color: var(--yellow);
+}
+.our-work ul li{
+    padding:0.5rem 1rem;
+    cursor:pointer;
+}
+.our-work ul li:not(.active):hover{
+     color: var(--btn-red);
+}
+.our-work .box{
+    padding: 5px;
+    overflow:hidden;
+    position:relative;
+}
+.our-work .box .overlay{
+    width:100%;
+    height:100%;
+    background-color: var(--green);
+    text-decoration: none;
+    position:absolute;
+    top:100%;
+    left:0;
+    opacity:0.7;
+    color:#FFFBF2;
+    font-size: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s ;
+}
+.our-work .box:hover .overlay{
+    top:0;
+}
+.our-work .box:hover img{
+    transform: scale(1.05);
+  }
+.our-work .btn{
+    background-color: var(--btn-red);
+    color: var(--yellow);
+}
+.our-work .btn:hover,
+.our-work .btn:focus
+{
+    background-color:rgb(241, 235, 235);
+    border: 1rem #33d1cc;
+    color:#19283f; 
+ }
+/* end our work*/
+.stuff .btn {
+    background-color:var(--btn-red);
+    color:var(--yellow);
+
+}
+.team{
+    background-color:var(--bg-gray);
+}
+.team h2{
+    color: #ffc400;
+}
+.team .box h4{
+    background-color: var(--green);
+}
+.team .box blockquote{
+    background-color: white;
+}
+.project{
+    background-color: var(--dark-color);
+}
+.project .btn{
+    background-color: var(--btn-red);
+    color: var(--yellow);
+}
+.project .btn:hover,
+.project .btn:focus{
+    background-color: white;
+    color: var(--dark-color);
+    font-weight:bold;
+}
+.card-img-top{
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+}
+.blog .btn{
+    background-color: var(--btn-red);
+    color:#ffa311;
+}
+.blog .btn:hover,
+.blog .btn:focus{
+    background-color:var(--dark-color); 
+    color: white;
+    font-weight:bold;
+}
+.subs {
+    background-color:#ffc400;
+}
+.subs .btn{
+    background-color: var(--dark-color);
+    color:#ffc400;
+}
+.subs.btn:hover,
+.subs.btn:focus{
+    background-color:#ffc400;
+    color:var(--dark-color);
+    font-weight:bold;
+}
+.subs input[type="text"]{
+    border:none;
+    border-bottom: 1px solid ;
+
+}
+.footer{
+    background-color:var(--dark-color);
+}
+.footer .btn{
+    background-color: var(--btn-red);
+    color:#ffc400;
+}
+.footer.btn:hover,
+.footer.btn:focus{
+    background-color:#ffc400;
+    color:var(--dark-color);
+    font-weight:bold;
+}
+.footer  ul li a{
+    font-size:30px;
+    color:#3467ad;
+}
